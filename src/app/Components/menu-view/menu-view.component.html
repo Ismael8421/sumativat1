@@ -1,0 +1,28 @@
+<section [ngClass]="{ 'dark-mode': isDarkMode, 'light-mode': !isDarkMode }">
+    <div [ngClass]="{ 'dark-txt': isDarkMode, 'light-txt': !isDarkMode }">SUMATIVA</div>
+    <!--Botones-->
+    <div>
+        <app-botones
+        [isDarkMode]="isDarkMode"
+        (themeChange)="onThemeChange($event)"
+        (firstSendA)="onFirstRecib($event)"
+        ></app-botones>
+    </div>
+    
+    <!--Registro-->
+    <div>
+        <app-registro
+        [isDarkMode]="isDarkMode"
+        (themeChange)="onThemeChange($event)"
+        ></app-registro>
+    </div>
+
+    <!--Menu Lateral-->
+    <div class="menuLat">
+        <app-menu-lat
+        [isDarkMode]="isDarkMode"
+        (themeChange)="onThemeChange($event)"
+        [firstValue]="firstRecibAb"
+        ></app-menu-lat>
+    </div>
+</section>

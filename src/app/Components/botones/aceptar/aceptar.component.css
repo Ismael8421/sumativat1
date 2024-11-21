@@ -1,0 +1,16 @@
+.btnAceptar{
+    height: 30px;
+    width: 120px;
+    background-color: #5cf17d;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    border-radius: 25px;
+    border: 1px solid #1f8c37;
+    box-shadow: 2px 2px #1f8c37;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+

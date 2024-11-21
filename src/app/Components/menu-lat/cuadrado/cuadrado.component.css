@@ -1,0 +1,17 @@
+.falseClass{
+    height: 100px;
+    width: 100px;
+    background-color: burlywood;
+    position: absolute;
+    left: 75px;
+    top: 225px;
+}
+
+.trueClass{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    position: absolute;
+    left: 75px;
+    top: 225px;
+}

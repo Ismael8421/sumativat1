@@ -1,0 +1,29 @@
+.light-mode{
+    height: 30px;
+    width: 120px;
+    background-color: #158cfe;
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    border-radius: 25px;
+    border: 1px solid #356bf0;
+    box-shadow: 2px 2px #356bf0;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dark-mode{
+    height: 30px;
+    width: 120px;
+    background-color: #7900a9;
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    border-radius: 25px;
+    border: 1px solid #500176;
+    box-shadow: 2px 2px #500176;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}

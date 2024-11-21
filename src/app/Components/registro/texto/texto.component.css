@@ -1,0 +1,14 @@
+.txt{
+    position: absolute;
+    top: 420px;
+    left: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.inTxt{
+    border-radius: 8px;
+    width: 225px;
+    border: 2px solid #b5b5b5;
+}
