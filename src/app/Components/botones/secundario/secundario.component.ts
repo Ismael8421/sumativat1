@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-secundario',
@@ -13,5 +13,14 @@ export class SecundarioComponent {
 
   onThemeChange(isDark: boolean) {
     this.isDarkMode = isDark;
+  }
+
+  //Boton secundario salida 
+  private segPress: boolean = false;
+  @Output() secPress = new EventEmitter<boolean>();
+
+  isSecPress(){
+    this.segPress = !this.segPress;
+    this.secPress.emit(this.segPress);
   }
 }

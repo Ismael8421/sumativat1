@@ -20,7 +20,7 @@ export class BotonesComponent {
   onThemeChange(isDark: boolean) {
     this.themeChange.emit(isDark);
   }
-
+  //PRIMARIO
   //Boton Primario entrada
   firstRecib: boolean = false;
 
@@ -36,4 +36,19 @@ export class BotonesComponent {
   isfirstSend(){
     this.firstSendA.emit(this.firstRecib);
   }  
+
+  //SECUNDARIO
+  //Boton Secundario entrada
+  secondRecib: boolean = false;
+
+  isSecondRecib(secPress: boolean){
+    this.secondRecib = secPress;
+    this.isSecondSend();
+  }
+  //Boton Secundario salida
+  @Output() secondSendA = new EventEmitter<boolean>();
+
+  isSecondSend(){
+    this.secondSendA.emit(this.secondRecib);
+  }
 }
